@@ -24,9 +24,9 @@ def upgrade():
                     sa.ForeignKeyConstraint(['user_id'], ['users_id'], ondelete='CASCADE'),
                     sa.PrimaryKeyConstraint('user_id', 'post_id')
                     )
-    
+    pass
 
 
 def downgrade():
     op.drop_table('votes')
-    
+    pass
