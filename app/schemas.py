@@ -12,7 +12,10 @@ class PostBase(BaseModel):
 
 
 class PostCreate(PostBase):
-    pass
+    # pass
+    title: str
+    content: str
+    published: bool = True
 
 
 class UserOut(BaseModel):
